@@ -1,0 +1,344 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine_Store</title>
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="car_added_product.js"></script>
+    <link rel="stylesheet" href="css/medicin_store.css">
+   <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Italianno&family=Lobster&family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
+   
+</head>
+<body>
+
+    
+<div class="topnav" id="myTopnav">
+    <a href="front_page.html" class="active" style="font-family:Lobster, sansiserif;">Cure</a>
+    <a href="#" style="background-color: #05c484;"><i class="fa fa-medkit" aria-hidden="true" > </i> MEDICINES</a>
+    <a href="lab_tests.html"><i class="fa fa-flask" aria-hidden="true"></i> LAB TESTS</a>
+    <a href="Appointment.html"><i class="fa fa-stethoscope" aria-hidden="true"></i> ASK DOCTOR</a>
+    <a href="covid-19.html"><i class="fa fa-thermometer-full" aria-hidden="true"></i> COVID-19</a>
+
+    
+        <a href="#" class="extra"><i class="fa fa-file-text" aria-hidden="true"> </i> Upload Prescription</a>
+        <a href="#" class="extra"><i class="fa fa-clock-o" aria-hidden="true"> </i> Order History</a>
+        <a href="#" class="extra"><i class="fa fa-inr" aria-hidden="true"> </i> Offers</a>
+    
+
+    <div class="dropdown">
+      <button class="dropbtn"> 
+        <i class="fa fa-caret-down"></i> MORE
+      </button>
+      <div class="dropdown-content">
+        <a href="#"><i class="fa fa-file-text" aria-hidden="true"> </i> Upload Prescription</a>
+        <a href="#"><i class="fa fa-clock-o" aria-hidden="true"> </i> Order History</a>
+        <a href="#"><i class="fa fa-inr" aria-hidden="true"> </i> Offers</a>
+      </div>
+    </div> 
+    <a href="sponsors.html"><i class="fa fa-inr" aria-hidden="true"> </i> SPONSORS</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    
+    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> MY CART</a>
+    <a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> LOGIN</a>   
+  </div>
+</section>
+<!--search_bar_section-->    
+<section>
+  <form>
+    
+    <input type="text" placeholder="search!!">
+    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+    
+  </form>
+</section>
+
+
+<section  class="flex-image-container">
+    <div class="header-container">
+        <h1 class="heading-top">Vitamins & Supplements | Up to 60% Off
+        </h1>
+    </div>
+    <div class="card" >
+       <img src="images/vd.jpg" alt="ankit" id="im1" >
+       <div class="text"><h3>Vitanin D chewable tablet</h3>
+        <p>strip of 10  Chewable Tablets </p>
+        <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+        <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+      </h3> 
+      <p  style="display: flex; justify-content: space-around;"><a  href="payment.html" target="_blank" type="button"  > Buy</a> <a href="#" type="button" id="p0" onclick="added0()"> Add to Cart</a></p>
+      </div>
+    </div>
+  
+    <div class="card" >
+      <img src="images/va.jpg" alt="ankit" >
+      <div class="text"><h3>Vitanin A chewable tablet</h3>
+       <p>strip of 10  Chewable Tablets </p>
+       <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+       <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+     </h3> 
+     <p  style="display: flex; justify-content: space-around;"><a href="payment.html"  target= "_blank" type="button" > Buy</a> <a href="#" type="button" id="p1" onclick="added1()" > Add to Cart</a></p>
+     </div>
+   </div>
+  
+   <div class="card" >
+    <img src="images/vk.jpg" alt="ankit" >
+    <div class="text"><h3>Vitanin K chewable tablet</h3>
+     <p>strip of 10  Chewable Tablets </p>
+     <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+     <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+   </h3> 
+   <p  style="display: flex; justify-content: space-around;"><a href="payment.html" type="button" target="_blank" > Buy</a> <a href="#" type="button" id="p2" onclick="added2()" > Add to Cart</a></p>
+   </div>
+  </div>
+  
+  <div class="card" >
+    <img src="images/va.jpg" alt="ankit" >
+    <div class="text"><h3>Vitanin A chewable tablet</h3>
+     <p>strip of 10  Chewable Tablets </p>
+     <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+     <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+   </h3> 
+   <p  style="display: flex; justify-content: space-around;"><a href="payment.html" type="button" target="_blank" > Buy</a> <a href="#" type="button" id="p3" onclick="added3()" > Add to Cart</a></p>
+   </div>
+  </div>
+  
+  <div class="card" >
+    <img src="images/ve.jpg" alt="ankit" >
+    <div class="text"><h3>Vitanin E chewable tablet</h3>
+     <p>strip of 10  Chewable Tablets </p>
+     <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+     <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+   </h3> 
+   <p  style="display: flex; justify-content: space-around;"><a href="payment.html" type="button"  target="_blank"> Buy</a> <a href="#" type="button" id="p4" onclick="added4()"  > Add to Cart</a></p>
+   </div>
+  </div>
+  
+  <div class="card" >
+    <img src="images/va.jpg" alt="ankit" >
+    <div class="text"><h3>Vitanin A chewable tablet</h3>
+     <p>strip of 10  Chewable Tablets </p>
+     <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+     <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+   </h3> 
+   <p  style="display: flex; justify-content: space-around;"><a href="payment.html" type="button" target="_blank"> Buy</a> <a href="#" type="button" id="p5" onclick="added5()" > Add to Cart</a></p>
+   </div>
+  </div>
+  
+  <div class="card"  id="hide">
+    <img src="images/vc.jpg" alt="ankit" >
+    <div class="text"><h3>Vitanin C chewable tablet</h3>
+     <p>strip of 10  Chewable Tablets </p>
+     <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+     <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+   </h3> 
+   <p  style="display: flex; justify-content: space-around;"><a href="payment.html" target="_blank" type="button" > Buy</a> <a href="#" type="button"  id="p6" onclick="added6()"> Add to Cart</a></p>
+   </div>
+   </div>
+
+   
+  <div class="card"  id="hide">
+    <img src="images/vc.jpg" alt="ankit" >
+    <div class="text"><h3>Vitanin C chewable tablet</h3>
+     <p>strip of 10  Chewable Tablets </p>
+     <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+     <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+   </h3> 
+   <p  style="display: flex; justify-content: space-around;"><a href="payment.html" target="_blank" type="button" > Buy</a> <a href="#" type="button"  id="p7" onclick="added7()"> Add to Cart</a></p>
+   </div>
+   </div>
+   
+  <div class="card"  id="hide">
+    <img src="images/vc.jpg" alt="ankit" >
+    <div class="text"><h3>Vitanin C chewable tablet</h3>
+     <p>strip of 10  Chewable Tablets </p>
+     <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+     <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+   </h3> 
+   <p  style="display: flex; justify-content: space-around;"><a href="payment.html" target="_blank" type="button" > Buy</a> <a href="#" type="button"  id="p8" onclick="added8()"> Add to Cart</a></p>
+   </div>
+   </div>
+   
+  <div class="card"  id="hide">
+    <img src="images/vc.jpg" alt="ankit" >
+    <div class="text"><h3>Vitanin C chewable tablet</h3>
+     <p>strip of 10  Chewable Tablets </p>
+     <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+     <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+   </h3> 
+   <p  style="display: flex; justify-content: space-around;"><a href="payment.html" target="_blank" type="button" > Buy</a> <a href="#" type="button"  id="p9" onclick="added9()"> Add to Cart</a></p>
+   </div>
+   </div>
+   
+  <div class="card"  id="hide">
+    <img src="images/vc.jpg" alt="ankit" >
+    <div class="text"><h3>Vitanin C chewable tablet</h3>
+     <p>strip of 10  Chewable Tablets </p>
+     <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+     <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+   </h3> 
+   <p  style="display: flex; justify-content: space-around;"><a href="payment.html" target="_blank" type="button" > Buy</a> <a href="#" type="button"  id="p10" onclick="added10()"> Add to Cart</a></p>
+   </div>
+   </div>
+   
+  <div class="card"  id="hide">
+    <img src="images/vc.jpg" alt="ankit" >
+    <div class="text"><h3>Vitanin C chewable tablet</h3>
+     <p>strip of 10  Chewable Tablets </p>
+     <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+     <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+   </h3> 
+   <p  style="display: flex; justify-content: space-around;"><a href="payment.html" target="_blank" type="button" > Buy</a> <a href="#" type="button"  id="p11" onclick="added11()"> Add to Cart</a></p>
+   </div>
+   </div>
+   
+  <div class="card"  id="hide">
+    <img src="images/vc.jpg" alt="ankit" >
+    <div class="text"><h3>Vitanin C chewable tablet</h3>
+     <p>strip of 10  Chewable Tablets </p>
+     <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+     <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+   </h3> 
+   <p  style="display: flex; justify-content: space-around;"><a href="payment.html" target="_blank" type="button" > Buy</a> <a href="#" type="button"  id="p12" onclick="added12()"> Add to Cart</a></p>
+   </div>
+   </div>
+   
+  <div class="card"  id="hide">
+    <img src="images/vc.jpg" alt="ankit" >
+    <div class="text"><h3>Vitanin C chewable tablet</h3>
+     <p>strip of 10  Chewable Tablets </p>
+     <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+     <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+   </h3> 
+   <p  style="display: flex; justify-content: space-around;"><a href="payment.html" target="_blank" type="button" > Buy</a> <a href="#" type="button"  id="p13" onclick="added13()"> Add to Cart</a></p>
+   </div>
+   </div>
+<!--third-row-->
+
+
+<div class="card"  id="hide">
+    <img src="images/vc.jpg" alt="ankit" >
+    <div class="text"><h3>Vitanin C chewable tablet</h3>
+     <p>strip of 10  Chewable Tablets </p>
+     <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+     <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+   </h3> 
+   <p  style="display: flex; justify-content: space-around;"><a href="payment.html" target="_blank" type="button" > Buy</a> <a href="#" type="button"  id="p14" onclick="added14()"> Add to Cart</a></p>
+   </div>
+   </div>
+   
+  <div class="card"  id="hide">
+    <img src="images/vc.jpg" alt="ankit" >
+    <div class="text"><h3>Vitanin C chewable tablet</h3>
+     <p>strip of 10  Chewable Tablets </p>
+     <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+     <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+   </h3> 
+   <p  style="display: flex; justify-content: space-around;"><a href="payment.html" target="_blank" type="button" > Buy</a> <a href="#" type="button"  id="p15" onclick="added15()"> Add to Cart</a></p>
+   </div>
+   </div>
+   
+  <div class="card"  id="hide">
+    <img src="images/vc.jpg" alt="ankit" >
+    <div class="text"><h3>Vitanin C chewable tablet</h3>
+     <p>strip of 10  Chewable Tablets </p>
+     <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+     <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+   </h3> 
+   <p  style="display: flex; justify-content: space-around;"><a href="payment.html" target="_blank" type="button" > Buy</a> <a href="#" type="button"  id="p16" onclick="added16()"> Add to Cart</a></p>
+   </div>
+   </div>
+   
+  <div class="card"  id="hide">
+    <img src="images/vc.jpg" alt="ankit" >
+    <div class="text"><h3>Vitanin C chewable tablet</h3>
+     <p>strip of 10  Chewable Tablets </p>
+     <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+     <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+   </h3> 
+   <p  style="display: flex; justify-content: space-around;"><a href="payment.html" target="_blank" type="button" > Buy</a> <a href="#" type="button"  id="p17" onclick="added17()"> Add to Cart</a></p>
+   </div>
+   </div>
+   
+  <div class="card"  id="hide">
+    <img src="images/vc.jpg" alt="ankit" >
+    <div class="text"><h3>Vitanin C chewable tablet</h3>
+     <p>strip of 10  Chewable Tablets </p>
+     <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+     <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+   </h3> 
+   <p  style="display: flex; justify-content: space-around;"><a href="payment.html" target="_blank" type="button" > Buy</a> <a href="#" type="button"  id="p18" onclick="added18()"> Add to Cart</a></p>
+   </div>
+   </div>
+   
+  <div class="card"  id="hide">
+    <img src="images/vc.jpg" alt="ankit" >
+    <div class="text"><h3>Vitanin C chewable tablet</h3>
+     <p>strip of 10  Chewable Tablets </p>
+     <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+     <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+   </h3> 
+   <p  style="display: flex; justify-content: space-around;"><a href="payment.html" target="_blank" type="button" > Buy</a> <a href="#" type="button"  id="p19" onclick="added19()"> Add to Cart</a></p>
+   </div>
+   </div>
+   
+  <div class="card"  id="hide">
+    <img src="images/vc.jpg" alt="ankit" >
+    <div class="text"><h3>Vitanin C chewable tablet</h3>
+     <p>strip of 10  Chewable Tablets </p>
+     <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+     <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+   </h3> 
+   <p  style="display: flex; justify-content: space-around;"><a href="payment.html" target="_blank" type="button" > Buy</a> <a href="#" type="button"  id="p20" onclick="added20()"> Add to Cart</a></p>
+   </div>
+   </div>
+
+
+   
+
+
+
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+
+
+
+    
+
+    </script>
+    </body>
+    </html>

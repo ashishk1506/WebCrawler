@@ -1,0 +1,416 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/front_page.css">
+   <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Italianno&family=Lobster&family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
+   
+</head>
+<body>
+  <section class="msg">
+ <div class="msg-content">This website is responsive for desktop and mobiles only. <span id="cross">X</span></div>
+  </section>
+    <section>
+    
+<div class="topnav" id="myTopnav">
+    <a href="#" class="active" style="font-family:Lobster, sansiserif; background-color: #05c484;" >Cure</a>
+    <a href="medicin_store.html"><i class="fa fa-medkit" aria-hidden="true"> </i> MEDICINES</a>
+    <a href="lab_tests.html"><i class="fa fa-flask" aria-hidden="true"></i> LAB TESTS</a>
+    <a href="Appointment.html"><i class="fa fa-stethoscope" aria-hidden="true"></i> ASK DOCTOR</a>
+    <a href="covid-19.html"><i class="fa fa-thermometer-full" aria-hidden="true"></i> COVID-19</a>
+
+    
+        <a href="#" class="extra"><i class="fa fa-file-text" aria-hidden="true"> </i> Upload Prescription</a>
+        <a href="#" class="extra"><i class="fa fa-clock-o" aria-hidden="true"> </i> Order History</a>
+        <a href="#" class="extra"><i class="fa fa-inr" aria-hidden="true"> </i> Offers</a>
+    
+
+    <div class="dropdown">
+      <button class="dropbtn"> 
+        <i class="fa fa-caret-down"></i> MORE
+      </button>
+      <div class="dropdown-content">
+        <a href="#"><i class="fa fa-file-text" aria-hidden="true"> </i> Upload Prescription</a>
+        <a href="#"><i class="fa fa-clock-o" aria-hidden="true"> </i> Order History</a>
+        <a href="#"><i class="fa fa-inr" aria-hidden="true"> </i> Offers</a>
+      </div>
+    </div> 
+    <a href="sponsors.html"><i class="fa fa-inr" aria-hidden="true"> </i> SPONSORS</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    
+    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> MY CART</a>
+    <a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> LOGIN</a>   
+  </div>
+</section>
+<!--search_bar_section-->    
+<section>
+  <form>
+    
+    <input type="text" placeholder="search!!">
+    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+    
+  </form>
+</section>
+
+
+<section>
+  <div class="docm">
+  <img src="images/docm.png" alt="" width= "100%" >
+  </div>
+  <div class="docf">
+    <img src="images/docf.png" alt="" width= "100%" >
+    </div> 
+</section>
+
+
+
+
+
+<section>
+    <div class="slidercontainer">
+        <div class="showSlide fade">  
+            <img src="images/brand-poster.jpg" />  
+            <div class="content"></div>  
+        </div>  
+        <div class="showSlide fade">  
+         
+            <img src="images/offer.jpg"/>  
+            <div class="content" style="color:rgb(1, 255, 230); ">Get 50% Discount On First Order</div>  
+        </div>  
+  
+        <div class="showSlide fade">  
+            <img src="images/covid.jpg"/>  
+            <div class="content" style="color:white">COVID-19 Precautions</div>  
+        </div>  
+        <div class="showSlide fade">  
+            <img src="images/code.jpg"/>  
+            <div class="content">PROMO CODE: NEW100</div>  
+        </div>  
+        <!-- Navigation arrows -->  
+        <a class="left" onclick="nextSlide(-1)">❮</a>  
+        <a class="right" onclick="nextSlide(1)">❯</a>  
+    </div>  
+</section>
+  
+  <section class="h1">
+  <div class="warnt">
+   <div> <i class="fa fa-star fa-2x" aria-hidden="true">  </i>  Genuine Medicines</div>
+    <div><i class="fa fa-truck fa-2x" aria-hidden="true">  </i> Timely Delivery</div>  
+    <div><i class="fa fa-inr fa-2x" aria-hidden="true">  </i>  Easy Returns & Refunds</div>  
+    <div><i class="fa fa-shield fa-2x" aria-hidden="true">  </i>  Secure Payments</div>
+  </div>
+
+
+  </section>
+
+<section class="warnt f3"> 
+<div>
+ <p> Need Medicines on regular basis?</p>
+ <button class="button-size">SUBSCRIBE NOW</button>
+</div>
+<div>
+  <p> Have a Prescription?</p>
+  <button  style="background-color:teal; color:white;">UPLOAD IT </button>
+ </div>
+ <div>
+  <p> Don't have a Prescription?</p>
+  <button>GET STARTED</button>
+ </div>
+</section>
+
+
+<section  class="flex-image-container">
+  <div class="header-container">
+      <h1 class="heading-top">Vitamins & Supplements | Up to 60% Off
+      </h1>
+  </div>
+  <div class="card" >
+     <img src="images/vd.jpg" alt="ankit" >
+     <div class="text"><h3>Vitanin D chewable tablet</h3>
+      <p>strip of 10  Chewable Tablets </p>
+      <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+      <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+    </h3> 
+    </div>
+  </div>
+
+  <div class="card" >
+    <img src="images/va.jpg" alt="ankit" >
+    <div class="text"><h3>Vitanin A chewable tablet</h3>
+     <p>strip of 10  Chewable Tablets </p>
+     <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+     <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+   </h3> 
+   </div>
+ </div>
+
+ <div class="card" >
+  <img src="images/vk.jpg" alt="ankit" >
+  <div class="text"><h3>Vitanin K chewable tablet</h3>
+   <p>strip of 10  Chewable Tablets </p>
+   <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+   <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+ </h3> 
+ </div>
+</div>
+
+<div class="card" >
+  <img src="images/va.jpg" alt="ankit" >
+  <div class="text"><h3>Vitanin A chewable tablet</h3>
+   <p>strip of 10  Chewable Tablets </p>
+   <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+   <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+ </h3> 
+ </div>
+</div>
+
+<div class="card" >
+  <img src="images/ve.jpg" alt="ankit" >
+  <div class="text"><h3>Vitanin E chewable tablet</h3>
+   <p>strip of 10  Chewable Tablets </p>
+   <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+   <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+ </h3> 
+ </div>
+</div>
+
+<div class="card" >
+  <img src="images/va.jpg" alt="ankit" >
+  <div class="text"><h3>Vitanin A chewable tablet</h3>
+   <p>strip of 10  Chewable Tablets </p>
+   <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+   <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+ </h3> 
+ </div>
+</div>
+
+<div class="card"  id="hide">
+  <img src="images/vc.jpg" alt="ankit" >
+  <div class="text"><h3>Vitanin C chewable tablet</h3>
+   <p>strip of 10  Chewable Tablets </p>
+   <h3 style="margin-bottom: 0; padding-bottom:0;">MRP RS. 7/-
+   <button style="padding: .3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button>
+ </h3> 
+ </div>
+</section>
+
+<section class="warnt bg1">
+  <div class="video-text">
+    <h1>How to order medicine on Cure? It's Simple.</h1>
+    <ul>
+      <li>Upload valid Prescription</li>
+      <li>Receive a conformation Email/Call</li>
+      <li>Delivery at your door step</li>
+    </ul>
+  </div>
+  <div class="video">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/36jRXMsIFuA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</section>
+
+
+
+<section  class="flex-image-container">
+  <div class="header-container">
+      <h1 class="heading-top" style="background-color :rgb(218, 218, 218);">Popular Lab packages </h1>
+  </div>
+  
+  
+
+ <div class="card checkup" >
+  <img src="images/lab1.png" alt="ankit" >
+  <div class="text"><h3> &nbsp; &nbsp; &nbsp; &nbsp;Basic Health checkup   &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;       <b>RS. 599/-</b>  </h3>
+   <p>&nbsp; &nbsp; &nbsp; &nbsp;Includes: 47 Parameters   &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <button style="padding: 0.3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button></p>
+  <p style="color:green; font-size: 15px; padding-top:0; margin-top:0;">&nbsp; &nbsp; &nbsp; &nbsp;<b>70% off</b>  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; <a href="lab_payment.html" target="_blank"><button style="background-color:indigo; color:white; padding: .8rem; border: 1px solid indigo; border-radius:20px; letter-spacing: 2px; cursor: pointer; text-decoration: none;">BOOK NOW</button></a></p>
+ </div>
+</div>
+  
+
+<div class="card checkup" >
+  <img src="images/full-body.png" alt="ankit" >
+  <div class="text"><h3> &nbsp; &nbsp; &nbsp; &nbsp;Advanced full body checkup  &nbsp; &nbsp; &nbsp;       <b>RS. 599/-</b>  </h3>
+   <p>&nbsp; &nbsp; &nbsp; &nbsp;Includes: 72 Parameters   &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <button style="padding: 0.3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button></p>
+  <p style="color:green; font-size: 15px; padding-top:0; margin-top:0;">&nbsp; &nbsp; &nbsp; &nbsp;<b>70% off</b>  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; <a href="lab_payment.html" target="_blank"> <button style="background-color:indigo; color:white; padding: .8rem; border: 1px solid indigo; border-radius:20px; letter-spacing: 2px; cursor: pointer; text-decoration:none">BOOK NOW</button></a></p>
+ </div>
+</div>
+  
+
+<div class="card checkup" >
+  <img src="images/covidcheck.png" alt="ankit" >
+  <div class="text"><h3> &nbsp; &nbsp; &nbsp; &nbsp;COVID-19  &nbsp;Test   &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;       <b>RS. 599/-</b>  </h3>
+   <p>&nbsp; &nbsp; &nbsp; &nbsp;Includes 25 parameters   &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <button style="padding: 0.3rem; margin:0.2rem; background-color: green; color: white; border:1px solid green; padding-bottom: 0;"> 4.4<i class="fa fa-star" aria-hidden="true"></i> </button></p>
+  <p style="color:green; font-size: 15px; padding-top:0; margin-top:0;">&nbsp; &nbsp; &nbsp; &nbsp;<b>70% off</b>  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<a href="lab_payment.html" target="_blank"> <button style="background-color:indigo; color:white; padding: .8rem; border: 1px solid indigo; border-radius:20px; letter-spacing: 2px; cursor: pointer; text-decoration:none;">BOOK NOW</button></a></p>
+ </div>
+</div>
+ </section>
+
+
+ 
+<section  class="flex-image-container">
+  <div class="header-container" style="background-color: rgb(218, 218, 218);">
+      <h1 class="heading-top" style="background-color:rgb(218, 218, 218);">Top Brands</h1>
+  </div>
+  <div class="card brand" >
+     <img src="images/dabur.png" alt="ankit" >
+  </div>
+  <div class="card brand" >
+    <img src="images/dettol.png" alt="ankit" >
+ </div>
+ <div class="card brand" >
+  <img src="images/manforce.png" alt="ankit" >
+</div>
+<div class="card brand" >
+  <img src="images/pediasure.png" alt="ankit" >
+</div>
+<div class="card brand" >
+  <img src="images/horlicks.png" alt="ankit" >
+</div>
+<div class="card brand" >
+  <img src="images/stayfree.png" alt="ankit" >
+</div>
+<div class="card brand" >
+  <img src="images/jhonson.png" alt="ankit" >
+</div>
+<div class="card brand" >
+  <img src="images/zandu.png" alt="ankit" >
+</div>
+<div class="card brand "  >
+  <img src="images/lifeboy.png" alt="ankit" >
+</div>
+</section>
+
+<section class="areas">
+  <div class="area-header">
+    <h1 style="font-size:3rem; margin-bottom:0; padding-bottom:0; letter-spacing: .2rem;">Areas we Serve</h1>
+  </div>
+  <div class="area-flex">
+    
+      <div class="circle">
+        <p style="font-size: 2rem;"><b>29</b></p>
+        <p style="transform: translateY(400%);">States</p>
+      </div>
+      
+      <div class="circle">
+        <p style="font-size: 2rem;"><b>7</b></p>
+        <p style="transform: translateY(400%);">Union Territories</p>
+      </div>
+      
+      <div class="circle">
+        <p style="font-size: 2rem;"><b>4000+</b></p>
+        <p style="transform: translateY(400%);">Cities</p>
+      </div>
+      
+      <div class="circle">
+        <p style="font-size: 2rem;"><b>25000+</b></p>
+        <p style="transform: translateY(400%);">Pincodes</p>
+      </div>
+    </div>
+
+
+
+
+</div>
+<div class="area-header">
+  <h1><span style="font-family: Lobster, sans-serif;">Cure: </span> An Easy and Faster Way To get Medicines Online</h1>
+  <p style="margin-left:8%; margin-right:8%;">Cure.com is an online pharmacy that aims at making healthcare delivery simple, accessible and affordable. To ensure this, Cure has brought together doctors, pharmacist, path labs and consumers on a single platform.
+
+  </p>
+</div>
+</section>
+
+
+<footer class="footer-flex">
+    
+  <div class="footer-contact">
+      <h1 class="footer-contact-heading">whatsapp Us</h1>
+      <p class="footer-contact-info"><i class="fa fa-whatsapp" aria-hidden="true"></i> 123456789</p>
+      <h1 class="footer-contact-heading">Follow Us On</h1>
+      <p class="footer-contact-info"> <a href="https://www.facebook.com/aman.rajak.100"><i class="fa fa-facebook-square fa-2x"></i></a>
+          <a href="https://www.instagram.com/invites/contact/?i=fm9pu5np9ytb&utm_content=1wy1zn5 fa-2x"><i class="fa fa-instagram fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/aman-rajak-766978192"><i class="fa fa-linkedin-square fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/aman-rajak-766978192"><i class="fa fa-twitter-square fa-2x"></i></a></i></p>
+     
+  </div>
+  
+  <div class="footer-contact">
+      <h1 class="footer-contact-heading">For Customers</h1>
+
+      <p class="footer-contact-info">Medical Store</p>
+      <p class="footer-contact-info">Health Products</p>
+      <p class="footer-contact-info">Doctor Consultation</p>
+      <p class="footer-contact-info">Lab Tests</p>
+      <p class="footer-contact-info">Find a Doctor</p>
+      <p class="footer-contact-info">Health Articles</p>
+      <p class="footer-contact-info">Offers/Coupons</p>
+  </div>
+  <div class="footer-contact">
+      <h1 class="footer-contact-heading">Help</h1>
+
+      <p class="footer-contact-info">FAQ</p>
+      <p class="footer-contact-info">Return Policy</p>
+      <p class="footer-contact-info">Terms and Conditions</p>
+      <p class="footer-contact-info">Privacy Policy</p>
+      
+  </div>
+  
+</footer>
+
+
+
+
+
+
+
+
+
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  <script type="text/javascript">  
+    var slide_index = 1;  
+    displaySlides(slide_index);  
+    function nextSlide(n) {  
+        displaySlides(slide_index += n);  
+    }  
+    function currentSlide(n) {  
+        displaySlides(slide_index = n);  
+    }  
+    function displaySlides(n) {  
+        var i;  
+        var slides = document.getElementsByClassName("showSlide");  
+        if (n > slides.length) { slide_index = 1 }  
+        if (n < 1) { slide_index = slides.length }  
+        for (i = 0; i < slides.length; i++) {  
+            slides[i].style.display = "none";  
+        }  
+        slides[slide_index - 1].style.display = "block";  
+    }  
+</script> 
+ <script>
+   $(document).ready(function(){
+    $("#cross").click(function(){
+      $(".msg").fadeOut();
+    });
+
+   });
+ </script> 
+
+ 
+
+
+
+
+</body>
+</html>

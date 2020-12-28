@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="car_added_product.js"></script>
+    
+    <link rel="stylesheet" href="css/payment.css">
+   <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Italianno&family=Lobster&family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
+   
+</head>
+<body>
+    <section class="header">
+       <a href="lab_tests.html"> <i class="fa fa-arrow-left" aria-hidden="true"></i> BACK</a>
+    </section>
+     <section class="order">
+         <img src="images/lab1.png" alt="" id="rajak">
+         <div class="order-detail" style="padding: 1rem;">
+             <h1>You have Booked this Test.</h1>
+         </div>
+     </section>
+
+     <section class="payment-options">
+         <div class="choose" style="margin-bottom: 40px;  background-color:teal;">
+             <p>Choose Payment Options</p>
+         </div>
+         <div class="cure-pay">
+             <p>Cure-pay</p>
+         </div>
+         <div class="credit">
+             <p id="card" onclick="show()" style="cursor: pointer;">Credit Card Payment</p>
+         </div>
+         <div class="card-payments" id="tog">
+             <div>
+             <form action="payment_successful.html" onsubmit="return validate()">
+                <div> <p>NAME</p>
+                 <input type="text" placeholder="Username" id="usnm" ></div>
+                <div> <p>CARD NUMBER</p>
+                 <input type="text" id="cardnm" > <input type="text" id="cardnm1" > <input type="text" id="cardnm2" ></div>
+                 <div><p>EXPIRY DATE</p>
+                 <input type="date" ></div>
+                <div> <p >CVV</p><input type="password" id="expd"></div>
+                <div><button type="submit" style="cursor: pointer;">Make Payment</button></div>
+             </form>
+             </div>
+         </div>
+         <div class="cash" id="c1">
+             <p>COD</p>
+         </div>
+     </section>  
+     <script>
+         function validate(){
+
+      var username = document.getElementById("usnm");
+      var cardNumber = document.getElementById("cardnm");
+      var cardNumber1 = document.getElementById("cardnm1");
+      var cardNumber2 = document.getElementById("cardnm2");
+      var expiryDate = document.getElementById("expd");
+      var rexg = /[A-Z]/;
+      var num = /^[0-9]\d{3}$/;
+      var num1 = /^[0-9]\d{3}$/;
+      var num2 = /^[0-9]\d{3}$/;
+      var exp = /^[0-9]\d{2}$/;
+       if( username.value.trim() == "" &&  cardNumber.value.trim() == "" && expiryDate.value.trim() == "")
+       {
+           alert("Can't left blank");
+           return false;
+       }
+       
+       else if( rexg.test(username.value)  &&  num.test(cardNumber.value)  &&  num1.test(cardNumber1.value)  &&  num2.test(cardNumber2.value) && exp.test(expiryDate.value)  )
+       {
+           alert("Confirm Payment.")
+          return true;
+       }
+      
+       else
+       {
+           alert("Invalid input");
+           return false;
+       }
+
+         }
+
+ function show(){
+     var aman = document.getElementById("tog")
+     aman.style.display="block"; 
+     
+ }
+   
+    /*$(document).ready(function(){
+    $("#card").click(function(){
+      $(".card-payments").toggle();
+    });
+
+   });*/
+
+
+ 
+
+
+     </script>
+
+
+</body>
+</html>

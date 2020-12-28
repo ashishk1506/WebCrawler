@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Italianno&family=Lobster&family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/Appointment.css">
+    <link rel="stylesheet" href="css/Doctor.css">
+    <title>Doctor's Appointment</title>
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+
+
+<body onload = "changeImage()">
+
+
+   
+  <div class="topnav" id="myTopnav">
+    <a href="front_page.html" class="active" style="font-family:Lobster, sansiserif; " >Cure</a>
+    <a href="medicin_store.html"><i class="fa fa-medkit" aria-hidden="true"> </i> MEDICINES</a>
+    <a href="lab_tests.html"><i class="fa fa-flask" aria-hidden="true"></i> LAB TESTS</a>
+    <a href="#" style="background-color: #05c484;"><i class="fa fa-stethoscope" aria-hidden="true"></i> ASK DOCTOR</a>
+    <a href="covid-19.html"><i class="fa fa-thermometer-full" aria-hidden="true"></i> COVID-19</a>
+
+    
+        <a href="#" class="extra"><i class="fa fa-file-text" aria-hidden="true"> </i> Upload Prescription</a>
+        <a href="#" class="extra"><i class="fa fa-clock-o" aria-hidden="true"> </i> Order History</a>
+        <a href="#" class="extra"><i class="fa fa-inr" aria-hidden="true"> </i> Offers</a>
+    
+
+    <div class="dropdown">
+      <button class="dropbtn"> 
+        <i class="fa fa-caret-down"></i> MORE
+      </button>
+      <div class="dropdown-content">
+        <a href="#"><i class="fa fa-file-text" aria-hidden="true"> </i> Upload Prescription</a>
+        <a href="#"><i class="fa fa-clock-o" aria-hidden="true"> </i> Order History</a>
+        <a href="#"><i class="fa fa-inr" aria-hidden="true"> </i> Offers</a>
+      </div>
+    </div> 
+    <a href="sponsors.html" ><i class="fa fa-inr" aria-hidden="true"> </i> SPONSORS</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    
+    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> MY CART</a>
+    <a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> LOGIN</a>   
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="row specialist">Specialist</div>
+    </div>
+    <div class="container-fluid mt-2" style="height:200px; background-color: #00df94" > 
+         <ul class="specialist_list">
+             <a href="ENT.html" style="text-decoration: none;"><li><i class="fas fa-deaf "></i></li><span>ENT</span></a>
+             <a href="Cardiology.html" style="text-decoration: none;"><li><i class="fas fa-heartbeat "></i></li><span>Cardiology</span></a>
+             <a href="Lungs.html" style="text-decoration: none;"><li><i class="fas fa-lungs"></i></li><span>Lungs</span></a>
+             <a href="Dentist.html" style="text-decoration: none;"><li><i class="fas fa-tooth "></i></li><span>Dentist</span></a>
+         </ul>
+    </div>
+    <div class="container bg-light mt-3">
+        <div class="row">
+            <div class="col-12 col-md-5 offset-md-1 bg-light">
+              <span style=" font-family: 'Roboto', sans-serif; padding: 10px 0px;display: flex ;justify-content: center;">Seek Immediate Advice</span>
+              <form action="#">
+                <div class="form-group mt-4">
+                <label>Enter Your Symtoms</label>
+                <input type="text" placeholder="e.g. fever,cold.." class="form-control">
+                </div>
+                <div class="form-group">
+                <label>Select Speciality</label><br>
+                <input type="radio" value="General" name="doctor">
+                <label for="General">General</label><br>
+                <input type="radio" value="Private" name="doctor">
+                <label for="Private">Private</label>
+                </div>
+                <div class="form-group">
+                <label>Enter Contact No.</label>
+                <input type="number" maxlength="10" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-success" dataclass="btn btn-success btn-block" data-toggle="modal" data-target="#booked">Submit</button>
+              </form>
+            </div>
+            <div class="col-12 col-md-6 bg-dark image_div">
+              <img src="images/message1.png" alt="message" id="message">
+            </div>
+        </div>
+    </div>
+    <!--modal-->
+    <div class="modal fade" id="booked" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Appointment Booked</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       Time alloted for <div id="time_alloted"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+</body>
+
+
+
+
+
+
+
+
+
+<script>
+ var i=1;
+  function changeImage()
+  {
+    setInterval(function(){
+    var image = ['images/message1.png','images/message2.jpg','images/message3.png'];
+    
+    document.getElementById('message').src = image[i];
+    i++;
+    if(i == 3)
+    {
+        i=0;
+    }
+    },2000);
+  }
+ 
+  var Time = new Date();
+  document.getElementById("time_alloted").innerHTML = Time.getHours()+":" +Time.getMinutes();
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</html>
